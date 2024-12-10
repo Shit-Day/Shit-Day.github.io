@@ -1,0 +1,99 @@
+/* styles.css */
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-color: #6c979e;
+    /* allows the mouseover to pass through the html elements */
+    pointer-events: none;
+}
+
+canvas {
+    /*display: block;*/
+    vertical-align: middle;
+    z-index: -1;
+    position: absolute;
+    /*needs to be manually specified so that the mouse can interact with boids, same for navbar */
+    pointer-events: auto;
+}
+
+.navbar {
+    overflow: auto;
+    background-color: #527f86;
+    white-space: nowrap;
+    pointer-events: auto;
+  }
+
+.navbar a {
+display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding: 1% 1%;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+background-color: #ffdd44;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    width: auto;
+
+}
+
+p {
+    position: relative;
+    z-index: 1;
+    margin: 1;
+    padding: 1%;
+}
+
+ul {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+#images-wrapper {    
+    line-height: 0;       
+     -webkit-column-count: 5;    
+     -webkit-column-gap: 0px;    
+     -moz-column-count: 5;
+     -moz-column-gap: 0px;
+      column-count: 5;    
+      column-gap: 0px;    
+ }  
+ @media (max-width: 1000px) {
+    #images-wrapper {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+   }  
+ @media (max-width: 800px) {
+    #images-wrapper {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+   }  
+ @media (max-width: 400px) {
+    #images-wrapper {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+     column-count:        1;
+    }
+   }
+ #images-wrapper img {    
+    width: 100% !important;    
+    height: auto !important;  
+ }  
+ #images-wrapper{    
+    display:inline-block;    
+    margin-right: auto;    
+    margin-left: auto;  
+ }
