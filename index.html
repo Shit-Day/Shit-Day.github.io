@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sh1t Day</title>
+    <title>Shit Day</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,7 +23,7 @@
 
     <h2>Sh1t Day</h2>
 
-    <p>I wore my airwalks for a whole good year, but my vans only lasted me 365 shit days <br> - Snun</p>
+    <blockquote>"I wore my airwalks for a whole good year, but my vans only lasted me 365 shit days" <br> - Snun</blockquote>
 
     <!-- Start of the Image Gallery-->
     <h2>Image Gallery</h2>
@@ -48,7 +48,13 @@
         <img src="Images/trench_3.png" alt="Trench coat">
         <img src="Images/WVB_Bag.png" alt="Trench coat">
     </div>
-    <script src="boids.js" defer></script>
+    <script type="module">
+        import { initializeBoids } from './boids.js';
+      
+        document.addEventListener("DOMContentLoaded", () => {
+          initializeBoids("boidsCanvas");
+        });
+      </script>
 </body>
 
 </html>

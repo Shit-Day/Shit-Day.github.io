@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Matt Money</title>
+  <title>Shit Day</title>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,20 +20,26 @@
     <a href="Services.html">Services</a>
     </div>
 
-    <h1>About</h1>
-    <p>
-        Matty is an undergraduate student studying cordwaining at London School of Fashion, alongside working as a cobbler, and lead designer for Matt Money inc.
-    </p>
-    <p>Contact Matty for any of the below services:</p>
+    <h1>Products for sale</h1>
 
+    <p>Alongside listed restoration and customisation services, there are a number of ready-to-wear items for sale:</p>
     <ul>
-        <li>Shoe, bag, and clothing repairs and alterations</li>
-        <li>Design work and pattern making</li>
-        <li>Production of design documentation</li>
-        <li>Design consultation</li>
-        <li>A brawl</li>
+    <li>
+      <figure>
+          <p>The Snapbag&#8482; - please <a href="Contact.html">contact</a> for inquiries/pricing/availability:</p>
+        <img src="Images/snaphat_1.jfif" alt="Snaphat tm" style="width: 15%;">
+        <img src="Images/snaphat_2.jfif" alt="Snaphat tm" style="width: 15%;">
+      </figure>
+    </li>
     </ul>
-    <script src="boids.js" defer></script>
+
+    <script type="module">
+        import { initializeBoids } from './boids.js';
+      
+        document.addEventListener("DOMContentLoaded", () => {
+          initializeBoids("boidsCanvas");
+        });
+      </script>
 </body>
 
 </html>

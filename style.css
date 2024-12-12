@@ -3,7 +3,7 @@
 html {
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow: auto;
     background-color: #6c979e;
     /* allows the mouseover to pass through the html elements */
     pointer-events: none;
@@ -17,6 +17,12 @@ canvas {
     /*needs to be manually specified so that the mouse can interact with boids, same for navbar */
     pointer-events: auto;
 }
+
+a {
+    color: hotpink;
+    pointer-events: auto;
+    text-decoration: none;
+  }
 
 .navbar {
     overflow: auto;
